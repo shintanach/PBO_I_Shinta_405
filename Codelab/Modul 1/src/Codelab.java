@@ -6,19 +6,19 @@ public class Codelab {
         String nama;
         char Jkelamin;
         int tahun;
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // Membuat objek 'input' dari kelas Scanner
 
         System.out.printf("Masukkan Nama : ");
-        nama = input.nextLine();
+        nama = input.nextLine();  // Membaca input nama pengguna sebagai string.
 
         System.out.printf("Masukkan Jenis Kelamin : ");
-        Jkelamin = input.next().charAt(0);
+        Jkelamin = input.next().charAt(0); // Membaca satu karakter yang dimasukkan pengguna untuk jenis kelamin.
 
         System.out.printf("Masukkan Tahun Lahir : ");
         tahun = input.nextInt();
 
-        int tahunskrng = LocalDate.now().getYear();
-        int umur = tahunskrng - tahun;
+        int tahunskrng = LocalDate.now().getYear(); // Mengambil tahun saat ini menggunakan LocalDate
+        int umur = tahunskrng - tahun; // menghitung umur
 
         System.out.println("\nData Diri : ");
         System.out.println("Nama :  " + nama);

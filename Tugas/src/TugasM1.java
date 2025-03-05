@@ -9,26 +9,26 @@ public class TugasM1 {
         String Nama = "Shinta Alya Nachasyi";
         String NIM = "202410370110405";
         Scanner input = new Scanner(System.in);
-        int pilihan = 0;
+        int pilihan;
         int i = 0;
 
 
         System.out.println("Pilih Login : ");
         System.out.println("1. Admin ");
         System.out.println("2. Mahasiswa ");
-        System.out.printf("Masukkan Pilihan : ");
+        System.out.print("Masukkan Pilihan : ");
         pilihan = input.nextInt();
 
         input.nextLine();
 
         if (pilihan == 1){
             while (i < 3) {
-                System.out.printf("Masukkan Username : ");
+                System.out.print("Masukkan Username : ");
                 username = input.nextLine();
-                System.out.printf("Masukkan Password : ");
+                System.out.print("Masukkan Password : ");
                 password = input.nextLine();
                 if (username.equals(username1) && password.equals(password1)) {
-                    System.out.printf("Login Admin Berhasil! ");
+                    System.out.print("Login Admin Berhasil! ");
                     break;
                 }
                 System.out.println("Login Gagal! Username atau passwod salah.");
@@ -40,9 +40,9 @@ public class TugasM1 {
             }
         } else if (pilihan == 2) {
             while (i < 3) {
-                System.out.printf("Masukkan Nama : ");
+                System.out.print("Masukkan Nama : ");
                 nama = input.nextLine();
-                System.out.printf("Masukkan NIM : ");
+                System.out.print("Masukkan NIM : ");
                 nim = input.nextLine();
                 if (nama.equals(Nama) && nim.equals(NIM)) {
                     System.out.println("Login Mahasiswa Berhasil! ");
